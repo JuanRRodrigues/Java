@@ -9,14 +9,8 @@ public class Turma {
 	}
 
 	
-	Disciplina discplina = new Disciplina();
 	
-	Turma.adicionarAluno(D1);
-	Turma.adicionarAluno(D2);
-	Turma.adicionarAluno(D3);
-	Turma.adicionarAluno(A4);
-	
-    public boolean adicionarAluno(Aluno aluno) {
+    public boolean MatricularAluno(Aluno aluno) {
     	if(aluno != null) {
     		this.alunos[posicao] = aluno;
     		posicao = posicao + 1;
@@ -24,12 +18,16 @@ public class Turma {
     	}
     	else {
     		return false;
+    	}	
+    }
+    public void ListarAlunos() {
+    	for(int i = 0; i < alunos.length; i++) {
+    		if(alunos[i] != null) {
+    			System.out.println(alunos[i].DadosDoAluno());
+    			System.out.println("----------");
+    		}
+    		
     	}
     }
-	
-	public boolean removerAluno(Aluno aluno) {
-		for (int i = 0; i < alunos.length; )
-		
-		return false;
-	}
 }
+	
