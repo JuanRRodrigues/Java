@@ -3,13 +3,14 @@
 public class Aluno {
 	private String Nome;
 	private int Idade;
-	private String Turma;
+	private String Turma = "A";
+	
 	
 	public Aluno (String Nome, int Idade, String Turma, String Curso) {
 		setNome(Nome);
 		setIdade(Idade);
 		setTurma(Turma);
-		setTurma(Curso);
+		
 	}
 	
 	public void setNome(String nome) {
