@@ -4,6 +4,7 @@ public class Turma {
 	private Aluno[] alunos;
 	private int posicao;
 	
+	
 	public Turma() {
 		this.alunos = new Aluno[20];
 	}
@@ -24,10 +25,22 @@ public class Turma {
     	for(int i = 0; i < alunos.length; i++) {
     		if(alunos[i] != null) {
     			System.out.println(alunos[i].DadosDoAluno());
-    			System.out.println("----------");
+    			System.out.println("-------------------");
     		}
     		
     	}
     }
+
+public void ListarNotas() {
+	for(int i = 0; i < alunos.length; i++) {
+		if(alunos[i] != null) {
+			System.out.println(alunos[i].DadosDoAluno());
+			System.out.println("-------------------");
+		}
+		
+	}
+}
+    
+    
 }
 	
