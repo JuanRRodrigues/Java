@@ -9,6 +9,8 @@ public class Curso {
 	String getCurso() {
 		return NomeCurso;
 	}
+	
+	
 	String getCargaHorária() {
 		return CargaHoraria;
 	}
