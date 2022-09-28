@@ -3,18 +3,21 @@
 public class Aluno {
 	private String Nome;
 	private int Idade;
-	private String Turma = "A";
+	private String Curso;
 	
 	
-	public Aluno (String Nome, int Idade, String Turma, String Curso) {
+	
+	public Aluno (String Nome, int Idade, String Curso) {
 		setNome(Nome);
 		setIdade(Idade);
-		setTurma(Turma);
+		setCurso(Curso);
 		
 	}
 	
+
 	public void setNome(String nome) {
 		this.Nome = nome;
+		
 		
 	}
 	public String getNome() {
@@ -29,19 +32,21 @@ public class Aluno {
 		return this.Idade;
 		
 	}
-	public void setTurma(String Turma) {
-		this.Turma = Turma;
+	public void setCurso(String Curso) {
+		this.Curso = Curso;
 	}
 	
-	public String getTurma() {
-		return this.Turma;
+	public String getCurso() {
+		return this.Curso;
 	}
 	
 	public String DadosDoAluno() {
 		return "Nome: "+ getNome() +
 			 "\nIdade: "+ getIdade() +
-			 "\nTurma " + getTurma();
-		
+			 "\nCurso " + getCurso();
+			 
+	
+		 
 		
 	}
 }
